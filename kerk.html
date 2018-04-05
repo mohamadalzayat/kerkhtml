@@ -18,7 +18,7 @@
   </head>
 
   <body>
-
+      <!-- Begin Navbar -->
     <nav class="site-header sticky-top">
       <div class="container d-flex flex-column flex-md-row justify-content-center">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -58,8 +58,56 @@
             </nav>
       </div>
     </nav>
+    <!-- End Navbar -->
       
-      
+    <!-- Begin slider -->  
+<header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One -->
+          <div class="carousel-item active" style="background-image: url('img/slider2.JPG')">
+              <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>First Slide</h2>
+              <p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.</p>
+              <button type="button" class="btn btn-primary theme-button">Lees meer</button>
+            </div>
+          </div>
+          <!-- Slide Two  -->
+          <div class="carousel-item" style="background-image: url('img/slider1.jpg')">
+              <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Second Slide</h2>
+              <p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten..</p>
+              <button type="button" class="btn btn-primary theme-button">Lees meer</button>
+            </div>
+          </div>
+          <!-- Slide Three  -->
+          <div class="carousel-item" style="background-image: url('img/slider3.jpg')">
+              <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Third Slide</h2>
+              <p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten..</p>
+              <button type="button" class="btn btn-primary theme-button">Lees meer</button>    
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+    <!-- End slider -->    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -68,12 +116,10 @@
     <script src="bower_components/bootstrap/assets/js/vendor/popper.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/bootstrap/assets/js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
+    
+    <script src="js/main.js"></script>
+      <script>
+        $('.carousel').carousel()
+      </script>
   </body>
 </html>
