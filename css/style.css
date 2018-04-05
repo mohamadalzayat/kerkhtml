@@ -1,6 +1,10 @@
 /********************************/
 /*         Basic                */
 /********************************/
+*::selection{
+    background-color: rgb(255, 215, 0);
+    color: black;
+}
 a{
     color: rgb(175, 9, 23);
 }
@@ -27,12 +31,19 @@ a:hover{
     border-color: rgb(255, 215, 0);
 }
 .corner-block-top{
-    border-top-right-radius: 10%;
+    border-top-right-radius: 2rem;
 }
 .corner-block-bottom{
-    border-bottom-left-radius: 10%;
+    border-bottom-left-radius: 2rem;
 }
-
+.title{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.title h2{
+    color: #fff;
+    font-weight: 500;
+}
 /********************************/
 /*         Navbar               */
 /********************************/
@@ -40,6 +51,7 @@ a:hover{
     background-color: rgba(255, 255, 255, 1);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 1px 4px 11px 1px rgba(0,0,0,.2);
 }
 .navbar{
     padding: 0 1rem;
@@ -131,8 +143,45 @@ a.nav-link{
 }
 .text-block p{
     margin-bottom: 2rem;
+    color: #222;
 }
 
+
+/********************************/
+/*       third section        */
+/********************************/
+.section-3{
+    width: 100%;
+    padding: 75px 0px;
+}
+.section-3 .title{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.section-3 .title h2{
+    color: #000;
+    font-weight: 500;
+}
+.section-3 .card-left{
+    padding-right: 2.5rem;
+}
+.section-3 .card-right{
+    padding-left: 2.5rem;
+}
+.section-3 .text-card{
+    background-color: rgb(175, 9, 23);
+    padding: 3rem;
+}
+.section-3 .text-card h4 {
+    color: #fff;
+    margin-bottom: 0;
+}
+.section-3.text-card  span, p{
+    color: #eee;
+}
+.section-3 .text-card  p{
+    margin-top: 1rem;
+}
 /********************************/
 /*       Dummy devices (replace them with your own or something else entirely!)     */
 /********************************/
