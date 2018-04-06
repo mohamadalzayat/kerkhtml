@@ -33,6 +33,23 @@ a:hover{
     color: #000;
     border-color: rgb(255, 215, 0);
 }
+.theme-button-light{
+    background-color: #fff;
+    color: rgb(175, 9, 23);
+    border-color: #fff;
+    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0,.1);
+    font-weight: 600;
+    transition: all 1s ease;
+}
+.theme-button-light:focus, .theme-button:active{
+    box-shadow: 0px 0px 6px 0.2rem rgba(255, 215, 0,.5);
+    background-color: rgb(255, 215, 0)!important;
+}
+.theme-button-light:hover{
+    background-color: rgb(255, 235, 0);
+    color: #000;
+    border-color: rgb(255, 215, 0);
+}
 .corner-block-top{
     border-top-right-radius: 2rem;
 }
@@ -170,7 +187,7 @@ a.nav-link{
 }
 
 /********************************/
-/*       third section        */
+/*       agenda                 */
 /********************************/
 .agenda{
     width: 100%;
@@ -197,6 +214,7 @@ a.nav-link{
     background-color: white;
     padding: 1rem;
     margin-bottom: 2rem;
+    border-radius: .25rem;
     position: relative;
     top: 0;
     transition: all .1s ease-out;
@@ -210,12 +228,12 @@ a.nav-link{
     top: -6px;
 }
 .list-agenda ul > a> li h2{
-    padding-right: 2rem;
+    padding-right: 1.8rem;
     color: rgb(175, 9, 23);
 }
 .list-agenda ul > a > li span{
     padding: .5rem 2rem 0;
-    color: #111;
+    color: #222;
 }
 .list-agenda ul > a > li p{
     padding: 0 2rem;
@@ -228,6 +246,53 @@ a.nav-link{
     font-size: 2rem;
     color: rgb(255, 215, 0);
 }
+
+/********************************/
+/*       preek gemist?           */
+/********************************/
+.preek{
+    width: 100%;
+    background-color: rgb(175, 9, 23);
+    padding: 75px 0px;
+}
+.list-preek{
+    text-align: center;
+    width: 100%;
+}
+.list-preek ul {
+    padding: 0;
+}
+.list-preek ul > li {
+    display: inline-flex;
+    height: 4.3rem;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .25rem;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-out;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-name: fadeInUp;
+}
+.list-preek ul > li:hover{
+    -webkit-box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2);
+    top: -6px;
+}
+.list-preek ul > li h2{
+    padding-right: 1.8rem;
+    color: #000;
+}
+.list-preek ul > li span{
+    padding: .5rem 2rem 0;
+    color: #222;
+}
+.list-preek ul > li audio{
+    width: 450px;
+}
+
 /********************************/
 /*       Dummy devices (replace them with your own or something else entirely!)     */
 /********************************/
@@ -303,9 +368,14 @@ a.nav-link{
         padding-right: 5rem;
         font-size: 1rem;
         padding-top: .5rem;
-    
     }
     .list-agenda ul > a > li h2{
        font-size: 1.5rem;
     }
+    .list-preek ul >  li h2{
+       font-size: 1.5rem;
+    }
+    .list-preek ul > li audio{
+        width: 200px;
+}
 }
