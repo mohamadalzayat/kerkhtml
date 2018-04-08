@@ -99,8 +99,8 @@ a.nav-link{
     display: none;
 }
 .navbar-toggler{
-    margin-left: 12rem;
     margin-top: 1.5rem;
+    margin-left: 8rem;
 }
 
 /********************************/
@@ -124,9 +124,9 @@ a.nav-link{
 }
 .carousel-caption{
     top: 30%;
-    left: 20%;
+    left: 15%;
     text-align: left;
-    max-width: 600px;
+    max-width: 450px;
 }
 .carousel-caption h1{
     font-size: 4rem;
@@ -210,6 +210,7 @@ a.nav-link{
 }
 .list-agenda ul > a > li {
     display: inline-flex;
+    min-width: 100%;
     height: 4.3rem;
     background-color: white;
     padding: 1rem;
@@ -237,7 +238,7 @@ a.nav-link{
 }
 .list-agenda ul > a > li p{
     padding: 0 2rem;
-    padding-right: 15rem;
+    padding-right: 21rem;
     margin: 0;
     font-size: 1.5rem;
     color: #111;
@@ -264,6 +265,7 @@ a.nav-link{
 }
 .list-preek ul > li {
     display: inline-flex;
+    min-width: 100%;
     height: 4.3rem;
     background-color: white;
     padding: 1rem;
@@ -284,13 +286,22 @@ a.nav-link{
 .list-preek ul > li h2{
     padding-right: 1.8rem;
     color: #000;
+    float: left;
 }
 .list-preek ul > li span{
     padding: .5rem 2rem 0;
     color: #222;
+    vertical-align: middle;
 }
 .list-preek ul > li audio{
-    width: 450px;
+    width: 500px;
+    margin-right: 1rem;
+}
+.list-preek ul > li a{
+    vertical-align: super;
+}
+.list-preek ul > li a i{
+    font-size: 1.7rem;
 }
 
 /********************************/
@@ -325,27 +336,123 @@ footer p{
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-collapse {
-         height: 100%;   
+
+@media (max-width: 1200px) { 
+
+}
+
+
+@media (max-width: 992px) { 
+    .list-preek ul > li h2,
+    .list-agenda ul > a > li p{
+        font-size: 1rem;
     }
-    .navbar-expand-lg .navbar-nav {
-        height: 100%;
+    
+    .list-agenda ul > a> li h2{
+        font-size: 1.5rem;
+    }
+    .list-preek ul > li span{
+        padding: 0 1rem;
+    }
+     .list-agenda ul > a > li span{
+        padding: 0 1.5rem;
+    }
+    .list-agenda ul > a > li p{
+        padding: 0rem 5rem; 
+        padding-right: 15rem;
     }
 }
-@media (max-width: 768px) { 
+
+
+
+@media (max-width: 769px) { 
+    .carousel-caption {
+        top: 20%;
+        left: 12%;
+    }
+    .carousel-caption h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    } 
     .list-agenda ul > a > li p{
-        padding-right: 5rem;
+        padding-right: 12rem;
+    }
+    .title-light h2,
+    .title-dark h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .section-3 .text-card {
+        padding: 1rem .5rem;
+    }
+    
+}
+
+@media (max-width: 576px) { 
+    body{
+        font-size: 0.8rem;
+    }
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    } 
+    .mobile-nowarp{
+        flex-wrap: nowrap;
+    }
+    .section-3 .card-left, 
+    .section-3 .card-right{
+        padding: 2rem;
+    }
+    .section-3 .text-card {
+        padding: 1rem .5rem;
+    }
+    .h2, h2 {
         font-size: 1rem;
-        padding-top: .5rem;
     }
-    .list-agenda ul > a > li h2{
-       font-size: 1.5rem;
+    /********************************/
+    /*       agenda                 */
+    /********************************/
+    .list-agenda ul > a > li {
+        padding: .5rem 1rem;
     }
-    .list-preek ul >  li h2{
-       font-size: 1.5rem;
+    .list-agenda ul > a> li h2{
+    padding-right: .8rem;
+        font-size: 1rem;
+    }
+    .list-agenda ul > a > li span{
+        padding: 0rem .8rem;
+    }
+    .list-agenda ul > a > li p{
+    padding: 0 .8rem;
+    font-size: 1rem;
+    }
+    .list-agenda ul > a  > li > i{
+    font-size: 2rem;
+    }
+    /********************************/
+    /*       preek gemist?           */
+    /********************************/
+    .list-preek ul > li {
+        display: flow-root;
+        min-width: 100%;
+        height: auto;
+    }
+    .list-preek ul > li h2{
+        padding-right: 0;
+        float: left;
+    }
+    .list-preek ul > li span{
+        padding: 0;
+        float: right;
     }
     .list-preek ul > li audio{
-        width: 200px;
-}
+        width: 87%;
+        margin-right: 0;
+    }
+    .list-preek ul > li a{
+        vertical-align: super;
+    }
+    .list-preek ul > li a i{
+        font-size: 1.7rem;
+    }
 }
